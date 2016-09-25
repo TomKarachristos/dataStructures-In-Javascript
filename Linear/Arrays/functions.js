@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 // split method
 const sentence = "the quick brown fox jumped over the lazy dog";
