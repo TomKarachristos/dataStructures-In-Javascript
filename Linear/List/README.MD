@@ -14,5 +14,7 @@ Linked list can be singly, doubly or multiply linked and can either be linear or
 
 Basic properties
 -Objects, called nodes, are linked in a linear sequence.
-A- reference to the first node of the list is always kept. This is called the 'head' or 'front'.[3]
+A- reference to the first node of the list is always kept. This is called the 'head' or 'front'.
 
+
+Some advantages to using iterators over using array indexing include: • Not having to worry about the underlying data storage structure when accessing list elements • Being able to update the list and not having to update the iterator, where an index becomes invalid when a new element is added to the list • Providing a uniform means of accessing elements for different types of data stores used in the implemenation of a  List  class
