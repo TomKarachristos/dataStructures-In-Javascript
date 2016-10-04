@@ -101,3 +101,9 @@ console.log(test);
 	test.splice(1,0,2.2);
 	console.log(test);
 */
+
+var num = [1,2,3,4,5];
+nums.reverse();
+print(nums); // 5,4,3,2,1
+
+// TODO
