@@ -15,15 +15,11 @@
   moveTo: (function) Moves the current position to specified position
 */
 
-
 function List(){
   this.listSize = 0;
   this.dataStore = [];
   // O(1)
   this.clear = function clear() {
-    delete this.dataStore;
-    this.dataStore = [];
-    this.listSize = this.pos = 0;
     };
   // O(N)
   this.find = function find(element) {
@@ -84,7 +80,7 @@ function List(){
     this.pos = 0;
   }
 
-  function end() {
+  function end() { 
     this.pos = this.listSize - 1;
   }
 
@@ -125,4 +121,8 @@ names.append("Jennifer");
 names.front();
 console.log(names.getElement());
 names.next();
+console.log(names.getElement());
+names.next();
+names.next();
+names.prev();
 console.log(names.getElement());

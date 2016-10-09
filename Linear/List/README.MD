@@ -13,6 +13,6 @@ A linked list is a collection of structures ordered not by their physical placem
 Linked list can be singly, doubly or multiply linked and can either be linear or circular.
 
 Basic properties
--Objects, called nodes, are linked in a linear sequence.
-A- reference to the first node of the list is always kept. This is called the 'head' or 'front'.[3]
+-objects, called nodes, are linked in a linear sequence.
+- reference to the first node of the list is always kept. This is called the 'head' or 'front'.[3]
 
