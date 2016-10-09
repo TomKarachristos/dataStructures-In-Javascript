@@ -12,14 +12,13 @@ A linked list is a collection of structures ordered not by their physical placem
 
 Linked list can be singly, doubly or multiply linked and can either be linear or circular.
 
+The underlying data storage mechanism we use for lists is the array
+
 Basic properties
-<<<<<<< HEAD
 -objects, called nodes, are linked in a linear sequence.
 - reference to the first node of the list is always kept. This is called the 'head' or 'front'.[3]
-=======
 -Objects, called nodes, are linked in a linear sequence.
 A- reference to the first node of the list is always kept. This is called the 'head' or 'front'.
->>>>>>> 24a6fd9452f0a92d12fd64ec8e37faf1ed731d48
 
 Some advantages to using iterators over using array indexing include: 
 • Not having to worry about the underlying data storage structure when accessing list elements 

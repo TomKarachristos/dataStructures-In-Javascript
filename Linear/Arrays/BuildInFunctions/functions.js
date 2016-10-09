@@ -1,7 +1,7 @@
 
 // ---split method
-const sentence = "the quick brown fox jumped over the lazy dog";
-const words = sentence.split(' ');
+var sentence = "the quick brown fox jumped over the lazy dog";
+var words = sentence.split(' ');
 for (var i = 0; i < words.length; ++i) {
 	console.log('word ' + i + ': ' + words[i]);
 }
@@ -17,9 +17,9 @@ for (var i = 0; i < words.length; ++i) {
   word 8: dog
 */
 // ---indexOf
-const foundTheWord = "quick";
+var foundTheWord = "quick";
 // ~ => -(n+1)
-const position = words.indexOf(foundTheWord)
+var position = words.indexOf(foundTheWord);
 if (~position) {
 	console.log("word is found");
 }
@@ -28,7 +28,7 @@ if (~position) {
 */
 
 // ---lastindex
-const foundTheLastWord = "the";
+var foundTheLastWord = "the";
 console.log('the world ' + foundTheLastWord + ' is found in last position : ' + words.lastIndexOf(foundTheLastWord));
 
 /*
@@ -50,7 +50,7 @@ console.log(words.toString('-')); // not working
 // the,quick,brown,fox,jumped,over,the,lazy,dog
 
 // ---concat
-const newSentence = ['new', 'sentece'];
+var newSentence = ['new', 'sentece'];
 console.log(words.concat(newSentence));
 
 /*
