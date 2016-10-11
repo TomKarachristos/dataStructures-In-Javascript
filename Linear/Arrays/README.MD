@@ -5,6 +5,8 @@ An array is stored so that the position of each element can be computed from its
 
 A dynamic array, growable array, resizable array, dynamic table, mutable array, or array list is a random access, variable-size list data structure that allows elements to be added or removed
 
+Consider a dynamic array that grows in size as more elements are added to it such as an ArrayList in Java. If we started out with a dynamic array of size 4, it would take constant time to push four elements onto it. Yet pushing a fifth element onto that array would take longer as the array would have to create a new array of double the current size (8), copy the old elements onto the new array, and then add the new element. The next four push operations would similarly take constant time, and then the subsequent addition would require another slow doubling of the array size.
+
 
 |               | INDEXING | INSERT/DELETE START | INSERT/DELETE MIDDLE | INSERT/DELETE END | WASTED SPACE |   |
 |---------------|----------|---------------------|----------------------|-------------------|--------------|---|
