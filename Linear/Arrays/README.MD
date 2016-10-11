@@ -8,6 +8,7 @@ An array is stored so that the position of each element can be computed from its
 |---------------|----------|---------------------|----------------------|-------------------|--------------|---|
 | ARRAY         | Θ(1)     | NO                  | NO                   | NO                | 0            |   |
 | DYNAMIC ARRAY | Θ(1)     | Θ(N)                | Θ(N)                 | Θ(1)              | Θ(N)         |   |
+| Linked list   | Θ(N)     | Θ(1)                | Θ(N)                 | Θ(1)              | Θ(N)         |   |
 
 Arrays are used to implement mathematical vectors and matrices, as well as other kinds of rectangular tables. Many databases, small and large, consist of (or include) one-dimensional arrays whose elements are records.
 
