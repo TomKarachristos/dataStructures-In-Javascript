@@ -3,6 +3,8 @@
 An array data structure is a data structure consisting of a collection of elements each identified by at least one array index or key. 
 An array is stored so that the position of each element can be computed from its index tuple by a mathematical formula.
 
+A dynamic array, growable array, resizable array, dynamic table, mutable array, or array list is a random access, variable-size list data structure that allows elements to be added or removed
+
 
 |               | INDEXING | INSERT/DELETE START | INSERT/DELETE MIDDLE | INSERT/DELETE END | WASTED SPACE |   |
 |---------------|----------|---------------------|----------------------|-------------------|--------------|---|
