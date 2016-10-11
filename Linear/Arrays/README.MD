@@ -17,6 +17,10 @@ One or more large arrays are sometimes used to emulate in-program dynamic memory
 
 Arrays can be used to determine partial or complete control flow in programs, as a compact alternative to (otherwise repetitive) multiple IF statements. They are known in this context as control tables and are used in conjunction with a purpose built interpreter whose control flow is altered according to values contained in the array. The array may contain subroutine pointers (or relative subroutine numbers that can be acted upon by SWITCH statements) that direct the path of the execution.
 
+Arrays have O(1) random access, but are really expensive to add stuff onto or remove stuff from.
+
+Linked lists are really cheap to add or remove items anywhere and to iterate, but random access is O(n).
+
 A lookup table is an array that replaces runtime computation with a simpler array indexing operation. 
 The savings in terms of processing time can be significant, since retrieving a value from memory is often faster than undergoing 
 an "expensive" computation or input/output operation.
