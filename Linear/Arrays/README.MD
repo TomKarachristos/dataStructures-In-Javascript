@@ -25,3 +25,5 @@ Linked lists are really cheap to add or remove items anywhere and to iterate, bu
 A lookup table is an array that replaces runtime computation with a simpler array indexing operation. 
 The savings in terms of processing time can be significant, since retrieving a value from memory is often faster than undergoing 
 an "expensive" computation or input/output operation.
+
+The principal benefit of a linked list over a conventional array is that the list elements can easily be inserted or removed without reallocation or reorganization of the entire structure because the data items need not be stored contiguously in memory or on disk, while an array has to be declared in the source code, before compiling and running the program. Linked lists allow insertion and removal of nodes at any point in the list, and can do so with a constant number of operations if the link previous to the link being added or removed is maintained during list traversal.
