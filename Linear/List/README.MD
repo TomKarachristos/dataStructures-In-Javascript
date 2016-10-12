@@ -6,21 +6,11 @@ Linking can be done in two ways – using dynamic allocation and using array ind
 
 Linked data structures include linked lists, search trees, expression trees, and many other widely used data structures. They are also key building blocks for many efficient algorithms, such as topological sort and set union-find.
 
-#Linked-lists
 
-A linked list is a collection of structures ordered not by their physical placement in memory but by logical links that are stored as part of the data in the structure itself. It is not necessary that it should be stored in the adjacent memory locations. Every structure has a data field and an address field. The Address field contains the address of its successor.
-
-Linked list can be singly, doubly or multiply linked and can either be linear or circular.
-
-The underlying data storage mechanism we use for lists is the array
-
-Basic properties
--objects, called nodes, are linked in a linear sequence.
-- reference to the first node of the list is always kept. This is called the 'head' or 'front'.[3]
--Objects, called nodes, are linked in a linear sequence.
-A- reference to the first node of the list is always kept. This is called the 'head' or 'front'.
-
-Some advantages to using iterators over using array indexing include: 
-• Not having to worry about the underlying data storage structure when accessing list elements 
-• Being able to update the list and not having to update the iterator, where an index becomes invalid when a new element is added to the list 
-• Providing a uniform means of accessing elements for different types of data stores used in the implemenation of a  List  class
+can be impliment: 
+  -Linked list: As a singly-linked list with a head pointer.
+  -Array: As a dynamic array
+  
+Queue:
+  -Linked list: As a singly-linked list with a head and tail pointer.
+  -Array: As a circular buffer backed by an array.

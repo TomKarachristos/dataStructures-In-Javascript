@@ -6,7 +6,7 @@ function createArr(file) {
     return arr;
 }
 
-const movies = createArr(films.txt).split("\n");
+var  movies = createArr(films.txt).split("\n");
 
 var movieList = new List();
 for (var i = 0; i < movies.length; ++i) {

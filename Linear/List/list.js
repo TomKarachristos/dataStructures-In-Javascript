@@ -122,11 +122,8 @@ names.front();
 console.log(names.getElement());
 names.next();
 console.log(names.getElement());
-<<<<<<< HEAD
 names.next();
 names.next();
 names.prev();
 console.log(names.getElement());
-=======
 
->>>>>>> 24a6fd9452f0a92d12fd64ec8e37faf1ed731d48
