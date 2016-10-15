@@ -3,10 +3,17 @@
 An array data structure is a data structure consisting of a collection of elements each identified by at least one array index or key. 
 An array is stored so that the position of each element can be computed from its index tuple by a mathematical formula.
 
+
+Arrays are used to implement mathematical vectors and matrices, as well as other kinds of rectangular tables. Many databases, small and large, consist of (or include) one-dimensional arrays whose elements are records.
+
+Arrays are used also to implement other data structures, such as heaps, hash tables, deques, queues, stacks, strings, and VLists.
+
+
+# Dynamic Arrays
+
 A dynamic array, growable array, resizable array, dynamic table, mutable array, or array list is a random access, variable-size list data structure that allows elements to be added or removed
 
 Consider a dynamic array that grows in size as more elements are added to it such as an ArrayList in Java. If we started out with a dynamic array of size 4, it would take constant time to push four elements onto it. Yet pushing a fifth element onto that array would take longer as the array would have to create a new array of double the current size (8), copy the old elements onto the new array, and then add the new element. The next four push operations would similarly take constant time, and then the subsequent addition would require another slow doubling of the array size.
-
 
 |               | INDEXING | INSERT/DELETE START | INSERT/DELETE MIDDLE | INSERT/DELETE END | WASTED SPACE |   |
 |---------------|----------|---------------------|----------------------|-------------------|--------------|---|
@@ -14,11 +21,6 @@ Consider a dynamic array that grows in size as more elements are added to it suc
 | DYNAMIC ARRAY | Θ(1)     | Θ(N)                | Θ(N)                 | Θ(1)              | Θ(N)         |   |
 | Linked list   | Θ(N)     | Θ(1)                | Θ(N)                 | Θ(1)              | Θ(N)         |   |
 
-Arrays are used to implement mathematical vectors and matrices, as well as other kinds of rectangular tables. Many databases, small and large, consist of (or include) one-dimensional arrays whose elements are records.
-
-Arrays are used to implement other data structures, such as heaps, hash tables, deques, queues, stacks, strings, and VLists.
-
-One or more large arrays are sometimes used to emulate in-program dynamic memory allocation, particularly memory pool allocation. Historically, this has sometimes been the only way to allocate "dynamic memory" portably.
 
 Arrays can be used to determine partial or complete control flow in programs, as a compact alternative to (otherwise repetitive) multiple IF statements. They are known in this context as control tables and are used in conjunction with a purpose built interpreter whose control flow is altered according to values contained in the array. The array may contain subroutine pointers (or relative subroutine numbers that can be acted upon by SWITCH statements) that direct the path of the execution.
 
@@ -30,4 +32,3 @@ A lookup table is an array that replaces runtime computation with a simpler arra
 The savings in terms of processing time can be significant, since retrieving a value from memory is often faster than undergoing 
 an "expensive" computation or input/output operation.
 
-The principal benefit of a linked list over a conventional array is that the list elements can easily be inserted or removed without reallocation or reorganization of the entire structure because the data items need not be stored contiguously in memory or on disk, while an array has to be declared in the source code, before compiling and running the program. Linked lists allow insertion and removal of nodes at any point in the list, and can do so with a constant number of operations if the link previous to the link being added or removed is maintained during list traversal.

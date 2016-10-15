@@ -13,13 +13,14 @@ Array.matrix = function(num_rows, num_cols, initial){
     }
     arr[i] = columns;
   }
+  return arr;
 };
 
 var nums = Array.matrix(5,5,0);
-print(nums[1][1]);
+console.log(nums[1][1]);
 var names = Array.matrix(3,3,"");
 names[1][2] = "Joe";
-print(names[1][2]);
+console.log(names[1][2]);
 
 var grades = [[89,77,78],[32,32,32]];
-print(grades[1][2]);
+console.log(grades[1][2]);
