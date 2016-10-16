@@ -22,7 +22,7 @@ function List(){
   this.clear = function clear() {
     };
   // O(N)
-  this.find = function find(element) {
+  this.find = function(element) {
     for (var i = 0; i < this.dataStore.length; ++i) {
       if (this.dataStore[i] == element) {
         return i;
@@ -45,7 +45,7 @@ function List(){
     this.dataStore[this.listSize++] = element;
   };
   // O(N)
-  this.remove = function remove(element) {
+  this.remove = function(element) {
     var foundAt = this.find(element);
     if (~foundAt) {
       this.dataStore.splice(foundAt,1);
@@ -54,7 +54,7 @@ function List(){
     }
     return false;
   };
-  this.length = function length(){
+  this.length = function(){
     return this.listSize;
   };
   // O(1)
@@ -62,11 +62,11 @@ function List(){
    return this.dataStore[this.pos];
   };
   // O(1)
-  this.length = function length() {
+  this.length = function() {
     return this.listSize;
   };
   // O(N)
-  this.contains = function contains(element) {
+  this.contains = function(element) {
     for (var i = 0; i < this.dataStore.length; ++i) {
       if (this.dataStore[i] == element) {
         return true;
@@ -76,35 +76,35 @@ function List(){
   };
   this.pos = 0;
 
-  function front() {
+  this.front = function() {
     this.pos = 0;
-  }
+  },
 
-  function end() { 
+  this.end = function() { 
     this.pos = this.listSize - 1;
-  }
+  },
 
   // O(1)
-  function prev() {
+  this.prev = function() {
     if (this.pos > 0) {
       --this.pos;
     }
-  }
+  };
 
   // O(1)
-  function next() {
+  this.next =function() {
     if (this.pos < this.listSize - 1) {
       ++this.pos;
     }
-  }
+  };
 
-  function currPos() {
+  this.currPos = function() {
     return this.pos;
-  }
+  };
 
-  function moveTo(position) {
+  this.moveTo = function(position) {
     this.pos = position;
-  }
+  };
 }
 
 var names = new List();
@@ -127,3 +127,6 @@ names.next();
 names.prev();
 console.log(names.getElement());
 
+module.exports = {
+  list: List
+}

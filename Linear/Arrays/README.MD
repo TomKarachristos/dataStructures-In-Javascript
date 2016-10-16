@@ -22,7 +22,7 @@ Consider a dynamic array that grows in size as more elements are added to it suc
 | Linked list   | Θ(N)     | Θ(1)                | Θ(N)                 | Θ(1)              | Θ(N)         |   |
 
 
-Arrays can be used to determine partial or complete control flow in programs, as a compact alternative to (otherwise repetitive) multiple IF statements. They are known in this context as control tables and are used in conjunction with a purpose built interpreter whose control flow is altered according to values contained in the array. The array may contain subroutine pointers (or relative subroutine numbers that can be acted upon by SWITCH statements) that direct the path of the execution.
+Arrays can be used to determine partial or complete control flow in programs, as a compact alternative to (otherwise repetitive) multiple IF statements. They are known in this context as control tables(or dispatch table) and are used in conjunction with a purpose built interpreter whose control flow is altered according to values contained in the array. The array may contain subroutine pointers (or relative subroutine numbers that can be acted upon by SWITCH statements) that direct the path of the execution. Something like polymorphism.
 
 Arrays have O(1) random access, but are really expensive to add stuff onto or remove stuff from.
 
